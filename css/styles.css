@@ -664,10 +664,11 @@ footer address{
 
 .modal-content{
     background-color: #FFFFFF;
-    width: 25vw;
-    height: 30vw;
+    width: 528px;
+    height: 581px;
     position: relative;
     transition: transform 0.3s;
+    padding: 40px;
 }
 .close-btn{
     cursor: pointer;
@@ -686,9 +687,46 @@ footer address{
     opacity: 0;  
 }
 
+.contact-form{
+    display: flex;
+    flex-direction: column;
 
+}
 
+.input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    position: relative;
+}
 
+input, textarea{
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    padding: 11px 12px 11px 42px;
+    outline: none;
+}
+
+.input-container svg{
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: calc(50% - 9px);
+    left: 12px;
+}
+
+input:focus, textarea:focus{
+    border: 1px solid rgba(33, 150, 243, 1);
+    outline: none;
+    cursor: pointer;
+    transition: var(--transition);
+
+}
+input:focus + svg{
+    fill: rgba(33, 150, 243, 1);
+    transition: var(--transition);
+}
 
 
 
