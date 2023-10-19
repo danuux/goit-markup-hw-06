@@ -331,51 +331,63 @@
                     </svg>
                 </li>
             </ul>
-                
+      
         </div>
+            <div class="newsletter">
+            <h4>Subscribe to the newsletter</h4>
+            <span class="footer-newsletter">
+            <label for="email"></label>
+            <input type="email" name="email" id="email" placeholder="E-mail" class="footer-input-placeholder">
+            <svg width="24px" height="24px" class="send-svg"><use href="./images/icons.svg#icon-send"></use></svg>
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+            </span>
+            </div>
         </div>
     </footer>
 
     <!-- Request our service Modal -->
         <div class="modal is-hidden" data-modal>
             <div class="modal-content">
-                <button class="close-btn" data-modal-close>&times;</button>
+                
+                <svg class="close-btn" data-modal-close>
+                    <use href="./images/icons.svg#icon-form-close-btn"></use>
+                </svg>
+                <div class="form-title">Leave your information and we'll call you back</div>
 
                 <form action="" method="get" autocomplete="off" class="contact-form">
 
                     <div class="form-section">
-                        <label for="name">Name</label>
+                        <label for="name" class="form-label">Name</label>
                         <div class="input-container">
-                            <input type="text" id="name" required>
+                            <input type="text" id="name" required class="textfield">
                             <svg><use href="./images/icons.svg#icon-name-form"></use></svg>
                         </div>
                     
 
                     
-                        <label for="tel">Telephone</label>
+                        <label for="tel" class="form-label">Telephone</label>
                         <div class="input-container">
-                            <input type="tel" id="tel" required>
+                            <input type="tel" id="tel" required class="textfield">
                             <svg><use href="./images/icons.svg#icon-phone-form"></use></svg>
                         </div>
                     
                     
                     
-                        <label for="email">E-mail</label>
+                        <label for="email" class="form-label">E-mail</label>
                         <div class="input-container">
-                            <input type="email" id="email" required>
+                            <input type="email" id="email" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" class="textfield">
                             <svg><use href="./images/icons.svg#icon-mail-form"></use></svg>
                         </div>
                     
 
                         <div class="input-container">
-                            <label for="comments">Comments</label>
-                            <textarea name="comments" id="" cols="30" rows="10"></textarea>
+                            <label for="comments" class="form-label">Comments</label>
+                            <textarea name="comments" id="" cols="30" rows="10" placeholder="Enter the text"></textarea>
                         </div>
                     </div>
+                    
 
-
-
-
+                        <input type="submit" value="Send" class="form-send-btn">
                 </form>
 
 

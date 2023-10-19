@@ -636,8 +636,78 @@ footer address{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 80px;
+    margin-top: 20px;
     padding-left: 100px;
+
+}
+.newsletter{
+    margin-left: 93px;
+    margin-top: 72px;
+    position: relative;
+}
+.newsletter h4{
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+}
+.footer-newsletter{
+    display: flex;
+    margin-top: 20px;
+}
+.footer-newsletter input{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    outline: none;
+    border-radius: 4px;
+    background: transparent;
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    color: #FFFFFF;
+
+}
+
+.footer-input-placeholder::placeholder{
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    margin-left: 16px;
+
+
+}
+.newsletter-btn{
+    background: rgba(33, 150, 243, 1);
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    margin-left: 12px;
+    padding-right: 40px;
+
+}
+.newsletter-btn:hover{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+}
+.send-svg{
+    position: absolute;
+    right: 30px;
+    top: 50px;
+    cursor: pointer;
+   
 
 }
 
@@ -673,14 +743,29 @@ footer address{
 .close-btn{
     cursor: pointer;
     position: absolute;
-    top: 0;
-    right: 0;
-    border: 1px solid #0000001A;
-    border-radius: 100%;
-    background-color: #FFFFFF;
-    width: 30px;
-    height: 30px;
-    margin: 5px;
+    top: 14px;
+    right: 14px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    padding: 6px;
+    box-sizing: content-box;
+    
+}
+.form-title{
+    font-family:var(--font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+
+}
+
+.close-btn:hover{
+    fill: var(--icon-color);
 }
 .is-hidden{
     visibility: hidden;
@@ -690,6 +775,7 @@ footer address{
 .contact-form{
     display: flex;
     flex-direction: column;
+    margin-top: 12px;
 
 }
 
@@ -700,12 +786,26 @@ footer address{
     position: relative;
 }
 
-input, textarea{
+.textfield, textarea{
     height: 40px;
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
-    padding: 11px 12px 11px 42px;
     outline: none;
+}
+.textfield{
+    padding: 11px 12px 11px 42px;
+}
+textarea{
+    height: 120px;
+    padding: 12px 16px;
+}
+textarea::placeholder{
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+
 }
 
 .input-container svg{
@@ -716,16 +816,27 @@ input, textarea{
     left: 12px;
 }
 
-input:focus, textarea:focus{
+.textfield:focus, textarea:focus{
     border: 1px solid rgba(33, 150, 243, 1);
     outline: none;
     cursor: pointer;
     transition: var(--transition);
 
 }
-input:focus + svg{
+.textfield:focus + svg{
     fill: rgba(33, 150, 243, 1);
     transition: var(--transition);
+}
+
+.form-label{
+    font-family:var(--font-family);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 1);
+    margin-top: 10px;
+
 }
 
 
