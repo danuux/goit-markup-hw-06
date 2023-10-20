@@ -700,8 +700,13 @@ footer address{
 }
 .newsletter-btn:hover{
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-
+    background-color: #FFFFFF;
+    color: var(--icon-color);
+    fill: var(--icon-color);
+    transition: var(--transition);
 }
+
+
 .send-svg{
     position: absolute;
     right: 30px;
@@ -766,6 +771,7 @@ footer address{
 
 .close-btn:hover{
     fill: var(--icon-color);
+    transition: var(--transition);
 }
 .is-hidden{
     visibility: hidden;
@@ -838,6 +844,98 @@ textarea::placeholder{
     margin-top: 10px;
 
 }
+.terms-and-conditions-container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+    
+}
+.terms-and-conditions{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.terms-and-conditions-container span{
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+    
+    
+
+}
+.terms-and-conditions span a{
+    color: var(--icon-color);
+}
+.terms-and-conditions-check{
+    width: 13px;
+    height: 13px;
+}
+.terms-and-conditions-check:not(:checked){
+   appearance: none;
+}
+input:checked + svg{
+    display: none;
+}
+.icon-checkbox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 13px;
+    height: 13px;
+    cursor: pointer;
+   
+}
+.terms-and-conditions-label{
+    margin-top: 20px;
+}
+.terms-and-conditions-label svg{
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: 27px;
+    left: 20px;
+}
+.send-form-btn{
+    display: flex;
+    justify-content: center;
+}
+.form-send-btn{
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--icon-color);
+    color: #FFFFFF;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border: 0;
+
+}
+.form-send-btn:hover{
+    background-color: #FFFFFF;
+    color: var(--icon-color);
+    transition: var(--transition);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+}
+input[value^="Send"] {
+    font-family: var(--font-family);
+font-size: 16px;
+font-weight: 700;
+line-height: 30px;
+letter-spacing: 0.06em;
+text-align: center;
+
+}
+
 
 
 
