@@ -702,6 +702,9 @@ footer address{
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     background-color: #FFFFFF;
     color: var(--icon-color);
+    transition: var(--transition);
+}
+.newsletter-btn:hover .send-svg{
     fill: var(--icon-color);
     transition: var(--transition);
 }
@@ -712,8 +715,7 @@ footer address{
     right: 30px;
     top: 50px;
     cursor: pointer;
-   
-
+    fill: #FFFFFF;
 }
 
 /* Modal section */
@@ -875,7 +877,13 @@ textarea::placeholder{
 .terms-and-conditions-check{
     width: 13px;
     height: 13px;
+    accent-color: var(--icon-color);
 }
+.terms-and-conditions-check:checked{
+    visibility: hidden;
+}
+
+
 .terms-and-conditions-check:not(:checked){
    appearance: none;
 }
@@ -891,6 +899,14 @@ input:checked + svg{
     cursor: pointer;
    
 }
+.checkmark{ 
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 2px;
+    vertical-align: sub;
+
+}
+
 .terms-and-conditions-label{
     margin-top: 20px;
 }
@@ -904,7 +920,9 @@ input:checked + svg{
 .send-form-btn{
     display: flex;
     justify-content: center;
+
 }
+
 .form-send-btn{
     width: 200px;
     height: 50px;
@@ -922,6 +940,7 @@ input:checked + svg{
 .form-send-btn:hover{
     background-color: #FFFFFF;
     color: var(--icon-color);
+    fill: var(--icon-color);
     transition: var(--transition);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
