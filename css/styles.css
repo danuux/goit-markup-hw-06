@@ -877,16 +877,18 @@ textarea::placeholder{
 .terms-and-conditions-check{
     width: 13px;
     height: 13px;
-    accent-color: var(--icon-color);
+    
 }
-.terms-and-conditions-check:checked{
-    visibility: hidden;
+input{
+    accent-color: auto;
+}
+input.terms-and-conditions-check{
+    accent-color: rgba(33, 150, 243, 1);
 }
 
-
-.terms-and-conditions-check:not(:checked){
+/* .terms-and-conditions-check:not(:checked){
    appearance: none;
-}
+} */
 input:checked + svg{
     display: none;
 }
